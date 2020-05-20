@@ -9,7 +9,7 @@ body, html{
 }
 
 .bg-image{
-	background-image:url("images/background.jpg");
+	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("images/background.jpg");
 	filter: blur(8px);
 	-webkit-filter: blur(8px);
 	height:100%;
@@ -29,40 +29,32 @@ body, html{
 	left:50%;
 	transform:translate(-50%, -50%);
 	padding: 50px 100px;
+	text-align:center;
 
-	background: rgba(0,0,0,0.5);
 	color:white;
 }
 
 .navbar{
-	position:absolute;
-	top:0px;
-	left:0px;
+
 }
 
-ul{
-	list-style-type:none;
-	margin:0;
-	padding:0;
-	overflow:hidden;
-	background-color: #393b75;
-	z-index:2;
-}
 
-li{
-	float: left;
-}
 
-li a{
+a{
 	display:inline-block;
 	color:white;
 	text-align:center;
 	padding: 14px 16px;
 	text-decoration: none;
 	font-size: 24px;
+	background-color: #393b75;
+	border-style:solid;
+	border-color:white;
+	border-width: 1px;
+	margin-bottom: 5px;
 }
 
-li a:hover{
+a:hover{
 	background-color:#94532a;
 }
 
