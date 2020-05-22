@@ -77,7 +77,7 @@ a:hover{
 	transform:translate(0, +10%);
 }
 
-@media (max-height: 850px){
+@media (max-height: 850px) or (max-width: 800px){
   #sphinx {
     visibility: hidden;
     display: none;
@@ -86,9 +86,14 @@ a:hover{
   #text{
   	transform:translate(-50%, -40%);
   }
+
+  #bottomright{
+  	visibility: hidden;
+    display: none;
+  }
 }
 
-@media screen or (max-width: 800px){
+@media screen and (max-width: 800px){
   #sphinx {
     visibility: hidden;
     display: none;
@@ -97,5 +102,35 @@ a:hover{
   #text{
   	transform:translate(-50%, -40%);
   }
+
+  #bottomright{
+  	visibility: hidden;
+    display: none;
+  }
 }
+
+#bottomright{
+	position:absolute;
+	bottom: 0;
+	right: 0;
+	display:inline-block;
+	z-index: 2;
+}
+
+.allmight{
+	display:block;
+	z-index: 2;
+}
+
+.speech{
+	opacity:0;
+}
+
+#bottomright:hover .speech{
+	opacity:1;
+}
+
+
+
+
 
