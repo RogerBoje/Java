@@ -75,7 +75,9 @@ a:hover{
 	max-height:400px;
 	max-width:300px;
 	margin:0px;
-	transform:translate(0, +10%);
+	transform:translate(0, 4%);
+	opacity:1;
+	pointer-events: none;
 }
 
 @media (max-height: 800px){
