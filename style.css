@@ -77,3 +77,12 @@ a:hover{
 	margin:0px;
 	transform:translate(0, +10%);
 }
+
+
+@media screen and (max-width: 600px){
+  #sphinx {
+    visibility: hidden;
+    display: none;
+  }
+}
+
