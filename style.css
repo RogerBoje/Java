@@ -22,9 +22,8 @@ h1{
 	background-size: cover;
 
 	position:0 0;
-
-
 }
+
 
 #text{
 	position: absolute;
@@ -83,12 +82,20 @@ a:hover{
     visibility: hidden;
     display: none;
   }
+
+  #text{
+  	transform:translate(-50%, -50%);
+  }
 }
 
 @media screen or (max-width: 800px){
   #sphinx {
     visibility: hidden;
     display: none;
+  }
+
+  #text{
+  	transform:translate(-50%, -50%);
   }
 }
 
