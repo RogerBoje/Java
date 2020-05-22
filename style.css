@@ -78,8 +78,14 @@ a:hover{
 	transform:translate(0, +10%);
 }
 
+@media (max-height: 850px){
+  #sphinx {
+    visibility: hidden;
+    display: none;
+  }
+}
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 800px){
   #sphinx {
     visibility: hidden;
     display: none;
